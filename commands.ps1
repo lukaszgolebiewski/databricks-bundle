@@ -9,5 +9,7 @@ databricks bundle validate --profile DEFAULT
 databricks bundle deploy --profile DEFAULT
 databricks bundle deploy --profile DEFAULT --target prod
 
+databricks bundle destroy --profile DEFAULT
+databricks bundle destroy --profile DEFAULT --target prod
 
 databricks bundle run lukaszInit_job --profile DEFAULT
