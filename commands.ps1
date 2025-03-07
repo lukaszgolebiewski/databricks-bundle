@@ -7,5 +7,5 @@ databricks auth profiles list
 databricks auth env --profile $databricksProfile
 
 #databricks bundle init --profile $databricksProfile
-databricks bundle validate .\lukasz1 --profile $databricksProfile
-
+databricks bundle validate --profile $databricksProfile
+databricks bundle deploy --profile $databricksProfile
