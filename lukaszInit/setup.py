@@ -31,4 +31,5 @@ setup(
         # https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
         "setuptools"
     ],
+    python_requires='>=3.11.4',
 )
