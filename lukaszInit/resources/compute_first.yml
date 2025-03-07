@@ -1,0 +1,12 @@
+resources:
+  clusters:
+    my_cluster:
+      name: "My Compute Cluster"
+      spark_version: "13.3.x-scala2.12"   # Specify the Databricks runtime
+      node_type_id: "Standard_DS3_v2"     # Azure VM type (use "i3.xlarge" for AWS)
+      autoscale:                          # Auto-scaling for better resource usage
+        min_workers: 1
+        max_workers: 1
+      timeout_seconds: 3600               # Optional: Timeout for the cluster
+      spark_conf:                         # Optional: Additional Spark configurations
+        "spark.databricks.delta.optimizeWrite.enabled": "true"           # Optional: Attach a cluster policy
