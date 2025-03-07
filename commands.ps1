@@ -6,3 +6,4 @@ $databricksProfile = "DEFAULT"
 databricks auth profiles list
 databricks auth env --profile $databricksProfile
 
+#databricks bundle init --profile $databricksProfile
