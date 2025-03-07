@@ -7,3 +7,7 @@ databricks auth env --profile DEFAULT
 databricks bundle init --profile DEFAULT
 databricks bundle validate --profile DEFAULT
 databricks bundle deploy --profile DEFAULT
+databricks bundle deploy --profile DEFAULT --target prod
+
+
+
