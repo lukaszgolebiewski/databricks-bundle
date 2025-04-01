@@ -1,9 +1,0 @@
-# The main pipeline for lukasz2
-resources:
-  pipelines:
-    lukasz2_pipeline:
-      name: lukasz2_pipeline
-      target: lukasz2_${bundle.environment}
-      libraries:
-        - notebook:
-            path: ../src/dlt_pipeline.ipynb
